@@ -207,7 +207,7 @@ public class ButtonsGame : MonoBehaviour {
             button.GetComponent<Image>().color = neutralColor;
         }
     }
-
+    // Método para mover um bloco para o bloco de resposta//
     public void SendToResBlock(GameObject block) {
         Destroy(_currentTip);
         var newBlock = Instantiate(block, currentResBlock.transform);
