@@ -169,7 +169,7 @@ public class ButtonsGame : MonoBehaviour {
             }
         }
     }
-
+// Método para exibir dicas visuais para o jogador//
     public void TriggerTip() {
         NormalizeButtons();
         if (_wordIndex < 9) {
