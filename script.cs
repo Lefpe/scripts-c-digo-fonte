@@ -265,21 +265,22 @@ public class Word {
             return syllableLists;
         }
     }
-
+// Método para obter a primeira sílaba da palavra//
     public string first {
         get => syllables.GetValue(0).ToString();
     }
+    // Método para obter a segunda sílaba da palavra//
     public string second {
         get => syllables.GetValue(1).ToString();
     }
 }
-
+// Classe que lida com o sistema de pop-up no jogo//
 public class PopUpSystem : MonoBehaviour {
     //pop up system//
     public GameObject popUpBox;
     public Animator animator;
     public TMP_Text popUpText;
-
+//exibir os pop-up//
     public void PopUp() {
         popUpBox.SetActive(true);
 
