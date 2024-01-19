@@ -215,7 +215,7 @@ public class ButtonsGame : MonoBehaviour {
         _cachedGameObjects.Add(newBlock);
         _movementsData.Add((newBlock, currentResBlock.transform.position));
     }
-
+// Método para limpar os objetos em cache.
     public void ClearCachedGameObjects() {
         foreach (var cachedGameObject in _cachedGameObjects) {
             GameObject.Destroy(cachedGameObject);
