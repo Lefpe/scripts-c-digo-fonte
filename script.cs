@@ -127,6 +127,7 @@ public class ButtonsGame : MonoBehaviour {
     }
 
     //Verify response order//
+    // Método para lidar com a resposta do jogador a uma sílaba.
     public void OnResponse(int pos) {
         _response = pos;
         var word = GetCurrentWord();
