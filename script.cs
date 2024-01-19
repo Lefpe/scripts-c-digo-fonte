@@ -223,7 +223,7 @@ public class ButtonsGame : MonoBehaviour {
         _cachedGameObjects.Clear();
     }
 }
-
+// Classe que representa uma lista de sílabas.
 [Serializable]
 public class SyllableList {
     public List<String> syllables = new List<String>();
