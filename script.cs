@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-
+// Esta classe gerencia os botões, cenário, áudio e lógica geral do jogo.
 public class ButtonsGame : MonoBehaviour {
     //botões do game //
     public Button[] _buttons;
@@ -38,19 +38,20 @@ public class ButtonsGame : MonoBehaviour {
     private int _currentAudioIndex = 0;
 
 
-    //get current word
+    //get current word//palavras atuais do jogo//
     public Word GetCurrentWord() => words[_wordIndex];
-
+    //retorna a silaba atual da palavra//
     public String currentSyllable {
         get => GetCurrentWord().syllables[_syllableIndex];
 
     }
-
+    //bloco de resposta atual destacado//
     public GameObject currentResBlock {
         get => _resBlocks[_syllableIndex];
     }
 //palavra a ser inserida//
     void Start() {
+        //inicia o carergamento da palavra atual//
         LoadCurrentWord();
     }
     
@@ -74,6 +75,7 @@ public class ButtonsGame : MonoBehaviour {
     }
     //transição dos blocos//
     void Update() {
+    //como movimento de objetos//
         foreach (var movementData in _movementsData.ToArray()) {
             if (movementData.HasValue) {
                 (GameObject movingBlock, Vector3 targetPosition) = movementData!.Value;
