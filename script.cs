@@ -228,7 +228,7 @@ public class ButtonsGame : MonoBehaviour {
 public class SyllableList {
     public List<String> syllables = new List<String>();
 }
-
+//atualização da skin do personagem//
 [Serializable]
 public class SkinConfig {
     public Sprite icon;
