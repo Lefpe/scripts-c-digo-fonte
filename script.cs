@@ -201,7 +201,7 @@ public class ButtonsGame : MonoBehaviour {
             }
         }
     }
-
+ // Método para normalizar as cores dos botõe//
     public void NormalizeButtons() {
         foreach (var button in _buttons) {
             button.GetComponent<Image>().color = neutralColor;
