@@ -32,7 +32,7 @@ public class homePage : MonoBehaviour
         Application.Quit();
     }
 }
-//
+//game
 using System;
 using System.Collections.Generic;
 using UnityEngine;
